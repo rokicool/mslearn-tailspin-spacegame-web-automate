@@ -80,7 +80,7 @@ stages:
         # Exit when any command returns a failure status.
         set -e
 
-        # Write terraform.tfvars.
+        # Write terraform.tfvars. 
         echo 'resource_group_location = "'$(ResourceGroupLocation)'"' | tee terraform.tfvars
         # Write backend.tfvars.
         echo 'resource_group_name = "tf-storage-rg"' | tee backend.tfvars
